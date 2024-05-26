@@ -1,0 +1,8 @@
+A=set(input("输入A集合,以逗号分离:").split(','))
+B=set(input("输入B集合,以逗号分离:").split(','))
+print("集合A=",A)
+print("集合B=",B)
+num1=len(A|B)
+print("A∪B的元素个数等于", num1)
+num2=len(A)+len(B)-len(A&B)
+print("A,B的元素个数之和，再与A∩B元素个数之差为", num2)
